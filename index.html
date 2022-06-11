@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IF Calculator main</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="IF Webtoons">
+	<meta name="keywords" content="Webtoons, html">
+	<link href="img/cal_logo.png" rel="shortcut icon"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+			<div class="header-left">
+			  <img class="logo" src="img/cal_logo_U.png"/>
+			</div>
+			<!-- Tambahkan ikon menu dibawah -->
+			<div class="header-right">
+			  <a href="#">HOME</a>
+			  <a href="#calculator">CALCULATOR</a>
+			  <a href="#history" class="login">HISTORY</a>
+			</div>
+	</header>
+	<main>
+		<div id="content">
+			<div class="flex-container-column card" id="calculator">
+			   <h2 class="judul" >IF Calculator</h2>
+			   
+			   <input type="text" class="calculator-screen  display" value="0" disabled />
+			   <div  class="calculator-keys">
+				<div class="row flex-container-row">
+				 <button class="all-clear button clear double">AC</button>
+				 <button class="operator button" value="%">%</button>
+				 <button class="operator button" value="/">&divide;</button>
+				</div>
+				 <div class="row flex-container-row">
+				 <button class="number button" value="7">7</button>
+				 <button class="number button" value="8">8</button>
+				 <button class="number button" value="9">9</button>
+				 <button class="operator button" value="*">&times;</button>
+				</div>
+				<div class="row flex-container-row">
+				 <button class="number button" value="4">4</button>
+				 <button class="number button" value="5">5</button>
+				 <button class="number button" value="6">6</button>
+				 <button class="operator button" value="-">-</button>
+				</div>
+				<div class="row flex-container-row">
+				 <button class="number button" value="1">1</button>
+				 <button class="number button" value="2">2</button>
+				 <button class="number button" value="3">3</button>
+				 <button class="operator button" value="+">+</button>
+				</div>
+				<div class="row flex-container-row">
+				 <button class="number zero-btn button double" value="0">0</button>
+				 <button class="decimal button" value=".">.</button>
+				 <button class="equal-sign button equals">=</button>
+				</div>
+			</div>
+			</div>	  
+			   <div class="history card" id="history">
+				<h2 class="judul" >History of Calculation</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Angka Pertama</th>
+							<th>Angka Kedua</th>
+							<th>Operator</th>
+							<th>Hasil</th>
+						</tr>
+					</thead>
+					<tbody id="historyList"></tbody>
+				</table>
+			</div>
+	</div>
+	  </main>
+	<footer class="main-bawah">
+		<center><p>IFCALCULATOR &#169; 2022 All Rights Reserved </p></center>
+	 </footer>
+
+	 <script src="js/kalkulator.JS"></script>
+	 <script src="js/storage.js"></script>
+</body>
+
+</html>
